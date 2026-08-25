@@ -1,6 +1,6 @@
 # Galeria-del-cafe
 
-# Nombre: Frank Lopez 
+## Nombre: Frank Lopez 
 
 # Titulo: El Secreto de un buen cafe 
 
