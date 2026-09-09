@@ -1,0 +1,301 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #CDD1DE;
+}
+
+body {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+.menu {
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    background-color: #ffffff;
+}
+
+.menu ul li {
+    padding: 10px;
+    margin: 0px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    background-color: #ffffff;
+}
+
+.menu a:hover {
+    color: #9C6615;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background-color: #ffffff;
+}
+
+
+main {
+    width: 100%;
+    height: 100%;
+    /* padding: 30px; */
+    background-color: #CDD1DE;
+}
+
+section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section h2{
+    align-self: flex-start; 
+    margin-left: 10%; 
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #413620;
+    font-size: 28px;
+    font-weight: bold;
+    background: none;
+}
+
+section .card {
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background: #9C6615;
+
+}
+
+.card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9C6615;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.texto {
+    width: 60%;
+    background: none;
+}
+
+.texto h4 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 12px;
+    background: none;
+}
+
+.texto p {
+    color: #e0e0e0;
+    font-size: 16px;
+    line-height: 1.6;
+    background: none;
+    font-family: sans-serif;
+}
+
+.img {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    padding: 0px 10px;
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 20px;
+    background: none;
+    padding: 0;
+}
+
+
+
+/* aqui comienza el main */
+main {
+    width: 100%;
+    height: 100%;
+    background-color: #CDD1DE;
+}
+
+.collage {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 80px;
+    background: none;
+}
+
+.collage img {
+    width: 23%;
+    height: 50vh;
+    border-radius: 15px;
+    object-fit: cover;
+    background: none;
+    padding: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #413620;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    background: none;
+    font-family: sans-serif;
+}
+
+
+@media (max-width: 1024px) {
+    section .card {
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        padding: 25px;
+    }
+
+    .img {
+        width: 35%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .texto {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .texto h4 {
+        text-align: center;
+    }
+
+    .texto p {
+        text-align: center;
+        font-family: sans-serif;
+    }
+
+    .img {
+        width: 50%;
+    }
+
+    .collage {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        margin: 30px auto;
+    }
+
+    .collage img {
+        width: 46%;
+        height: auto;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+
+    }
+}
+
+@media (max-width: 425px) {
+
+    .menu a:hover {
+        color: #9C6615;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+        font-size: 14px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section .card {
+        width: 90%;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .texto {
+        width: 100%;
+    }
+
+    .texto h4 {
+        text-align: center;
+    }
+
+    .img {
+        width: 70%;
+        margin-top: 20px;
+    }
+
+    .collage {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        margin: 30px auto;
+    }
+
+    .collage img {
+        width: 46%;
+        height: auto;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+}

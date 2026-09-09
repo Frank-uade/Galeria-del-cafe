@@ -1,0 +1,280 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #CDD1DE;
+}
+
+body{
+        font-family:sans-serif;
+}
+
+.menu {
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    background-color: #ffffff;
+}
+
+.menu ul li {
+    padding: 10px;
+    margin: 0px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    background-color: #ffffff;
+}
+
+.menu a:hover {
+    color: #9C6615;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background-color: #ffffff;
+}
+
+/* main */
+
+section {
+    width: 100%;
+    height: auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    background: none;
+    padding: 0px 10px;
+}
+
+img {
+    width: 65%;
+    padding: 10px 10px;
+    background: none;
+    border-radius: 50px;
+    overflow: hidden;
+
+}
+
+.historia-caja {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5% 5%;
+    background-color: #9C6615;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.historia-caja .cards {
+    width: 55%;
+    background: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.historia-caja .cards h4 {
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px 0px;
+    line-height: 1.5;
+    background: none;
+}
+
+.historia-caja .cards p {
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0px;
+    line-height: 1.5;
+    background: none;
+    font-family:sans-serif;
+}
+
+.text-beneficios {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5% 0px;
+    padding: 0px 10px;
+    font-family:sans-serif;
+}
+
+.cards {
+    width: 30%;
+    /* height: auto; */
+    display: block;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 10px;
+    background-color: #9C6615;
+    border-radius: 10px;
+}
+
+.cards h4 {
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0px;
+    background: none;
+}
+
+.cards p {
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    margin: 10px 0px;
+    background: none;
+}
+
+.cards ul,
+li {
+    color: #ffffff;
+    font-size: 16px;
+    list-style-position: inside;
+    text-align: left;
+    /* text-align: center;  */
+    margin: 10px 0px;
+    background: none;
+}
+
+
+/* Footer */
+footer {
+    background-color: #413620;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    background: none;
+    font-family:sans-serif;
+}
+
+
+@media (max-width: 1024px) {
+    .historia-caja {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        padding: 20px;
+    }
+
+    .historia-caja .img {
+        width: 75%;
+        margin-top: 20px;
+    }
+
+    .historia-caja .cards {
+        width: 100%;
+    }
+
+    .historia-caja .cards h4 {
+        color: #ffffff;
+        font-size: 22px;
+        text-align: center;
+        margin-bottom: 10px;
+        background: none;
+    }
+
+    .historia-caja .cards p {
+        color: #ffffff;
+        font-size: 15px;
+        text-align: center;
+        margin: 10px 0px;
+        line-height: 1.5;
+        background: none;
+    }
+
+    .text-beneficios {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .text-beneficios .cards {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+
+
+    .menu a:hover {
+        color: #9C6615;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+        font-size: 14px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .historia-caja .cards h4 {
+        font-size: 18px;
+    }
+
+    .historia-caja .cards p {
+        font-size: 14px;
+    }
+
+    .historia-caja .img {
+        width: 95%;
+    }
+
+    .text-beneficios .cards {
+        width: 95%;
+    }
+
+    footer p {
+        width: 100%;
+        margin: 0;
+        background: none;
+    }
+}
